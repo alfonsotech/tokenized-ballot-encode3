@@ -1,0 +1,25 @@
+{
+  "name": "project1-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "deploy:token": "npx hardhat run scripts/DeployMyToken.ts",
+    "deploy:ballot": "npx hardhat run scripts/DeployTokenizedBallot.ts",
+    "deploy:test-my-token":"npx hardhat run scripts/TestMyToken.ts",
+    "give-voting-tokens": "npx hardhat run scripts/giveVotingTokens.ts",
+    "vote": "npx hardhat run scripts/Vote.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox-viem": "^3.0.0",
+    "hardhat": "^2.22.8"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2",
+    "dotenv": "^16.4.5"
+  }
+}
