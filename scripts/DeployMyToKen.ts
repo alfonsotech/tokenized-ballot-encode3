@@ -1,7 +1,9 @@
+import { viem } from "hardhat";
 import { createPublicClient, http, createWalletClient } from "viem";
 import { privateKeyToAccount } from "viem/accounts";
 import { sepolia } from "viem/chains";
 import * as dotenv from "dotenv";
+
 
 dotenv.config();
 
@@ -30,7 +32,7 @@ async function main() {
 
 
 
-
+//OLD DEPLOY
 // import { viem } from "hardhat";
 
 // async function main() {
