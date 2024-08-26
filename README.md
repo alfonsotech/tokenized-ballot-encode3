@@ -2,7 +2,7 @@
 
 Scripts
 - `npm run deploy:token`: deploy MTK token contract
-- `npm run deploy:token deploy:ballot`: deploy tokenized ballot contract,
+- `npm run deploy:ballot`: deploy tokenized ballot contract,
 - `npm run give-voting-tokens`: Give voting rights via self-delegation,
 - `npm run vote`: Vote on a proposal using your tokens
 
