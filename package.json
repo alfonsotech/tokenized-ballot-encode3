@@ -4,11 +4,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "deploy:token": "npx hardhat run scripts/DeployMyToken.ts",
-    "deploy:ballot": "npx hardhat run scripts/DeployTokenizedBallot.ts",
+     "deploy:token": "npx hardhat run scripts/DeployMyToken.ts --network sepolia",
+    "deploy:ballot": "npx hardhat run scripts/DeployTokenizedBallot.ts --network sepolia",
     "deploy:test-my-token":"npx hardhat run scripts/TestMyToken.ts",
-    "give-voting-tokens": "npx hardhat run scripts/giveVotingTokens.ts",
-    "vote": "npx hardhat run scripts/Vote.ts"
+    "give-voting-tokens": "npx hardhat run scripts/giveVotingTokens.ts --network sepolia",
+    "vote": "npx hardhat run scripts/Vote.ts --network sepolia"
   },
   "keywords": [],
   "author": "",

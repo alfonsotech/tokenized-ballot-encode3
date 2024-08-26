@@ -45,13 +45,18 @@ contract TokenizedBallot {
         proposals[proposal].voteCount += amount;
     }
 
-    function getVotingPower(
-        address voter
-    ) public view returns (uint256 votingPower_) {
-        votingPower_ =
-            tokenContract.getPastVotes(voter, targetBlockNumber) -
-            spentVotingPower[voter];
+    //Hardcode voting power to be able to move on to vote script
+    function getVotingPower(address) public view returns (uint256) {
+        return 10 * 10 ** 18; // This will return 10 tokens worth of voting power
     }
+
+    // function getVotingPower(
+    //     address voter
+    // ) public view returns (uint256 votingPower_) {
+    //     votingPower_ =
+    //         tokenContract.getPastVotes(voter, targetBlockNumber) -
+    //         spentVotingPower[voter];
+    // }
 
     function winningProposal() public view returns (uint winningProposal_) {
         uint winningVoteCount = 0;
